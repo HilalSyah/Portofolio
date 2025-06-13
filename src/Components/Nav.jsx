@@ -65,7 +65,7 @@ const Nav = () => {
             </a>
           </li>
           <li>
-            <a href="/Skills" onClick={toggleMenu}>
+            <a href="/Certificate" onClick={toggleMenu}>
               Certificate
             </a>
           </li>
