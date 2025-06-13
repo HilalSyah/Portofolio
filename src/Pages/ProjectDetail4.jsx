@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { IoCloseSharp } from "react-icons/io5";
-import project1 from "../assets/project4.png";
+import project1 from "../assets/Project4.png";
 import ssproject1 from "../assets/Ss1-p-4.png";
 import ssproject2 from "../assets/Ss2-p-4.png";
 import ssproject3 from "../assets/Ss3-p-4.png";
