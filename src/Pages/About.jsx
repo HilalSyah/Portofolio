@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaHtml5, FaCss3Alt, FaBootstrap, FaJs, FaReact, FaGitAlt, FaLaravel, FaNodeJs, FaFigma, FaJava, FaPhp, FaPython, FaGithub, FaLinkedin, FaInstagram, FaTwitter, FaCode, FaPalette, FaServer, FaRocket } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs, SiMysql, SiMongodb, SiTypescript, SiFlutter, SiDart, SiSass } from "react-icons/si";
+import { FaHtml5, FaCss3Alt, FaBootstrap, FaJs, FaReact, FaGitAlt, FaLaravel, FaNodeJs, FaFigma, FaJava, FaPhp, FaPython, FaGithub, FaLinkedin, FaInstagram, FaTwitter, FaCode, FaPalette, FaServer, FaRocket, FaVuejs } from "react-icons/fa";
+import { SiTailwindcss, SiNextdotjs, SiMysql, SiMongodb, SiTypescript, SiFlutter, SiDart, SiSass, SiFirebase, SiKotlin, SiGo, SiExpress } from "react-icons/si";
 import Profile from "../assets/Hilal.jpg";
 import Nav from "../Components/Nav";
 import Footer from "../Components/Footer";
@@ -27,6 +27,11 @@ const skills = [
   { name: "Java", icon: <FaJava className="text-4xl text-red-600" /> },
   { name: "PHP", icon: <FaPhp className="text-4xl text-purple-600" /> },
   { name: "Python", icon: <FaPython className="text-4xl text-blue-600" /> },
+  { name: "Firebase", icon: <SiFirebase className="text-4xl text-yellow-500" /> },
+  { name: "Vue", icon: <FaVuejs className="text-4xl text-green-400" /> },
+  { name: "Kotlin", icon: <SiKotlin className="text-4xl text-purple-500" /> },
+  { name: "Golang", icon: <SiGo className="text-4xl text-blue-400" /> },
+  { name: "Express.js", icon: <SiExpress className="text-4xl text-white" /> },
 ];
 
 const journey = [
@@ -96,7 +101,7 @@ const About = () => {
       <Nav />
       <section id="about" className="min-h-screen bg-[#0d0c1d] text-white px-6 py-20 font-grotesk flex items-center justify-center w-full flex-col">
         <h2 className="text-4xl font-bold text-[#00F5D4] pt-10">About Me</h2>
-        <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }} className="max-w-5xl w-full grid md:grid-cols-2 gap-15 pt-10">
+        <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.1 }} className="max-w-5xl w-full grid md:grid-cols-2 gap-15 pt-10">
           {/* Foto atau Ilustrasi */}
           <motion.div variants={fadeInBlur} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.3 }} className="relative group" whileHover={{ scale: 1, transition: { duration: 0.3 } }}>
             <div className="w-full h-full bg-gradient-to-br  p-1 rounded-xl">
@@ -161,7 +166,7 @@ const About = () => {
               websites. From intuitive front-end designs to powerful back-end systems, I blend creativity and logic to deliver exceptional web experiences.
             </p>
             <div className="w-full">
-              <motion.div variants={containerVariants} className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8 w-[4  0rem]">
+              <motion.div variants={containerVariants} className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
                 <motion.div variants={itemVariants} whileHover={{ scale: 1.01, boxShadow: "0 0 20px 5px rgba(124,58,237,0.6)" }} className="bg-[#1e1e2e] p-5 rounded-lg cursor-pointer w-full">
                   <FaPalette className="text-3xl text-purple-400 mb-3" />
                   <h3 className="text-xl font-semibold mb-1">UI/UX Design</h3>
