@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaArrowLeft, FaArrowRight, FaReact } from "react-icons/fa";
 import { IoCloseSharp } from "react-icons/io5";
-import project1 from "../assets/project5.png";
+import project1 from "../assets/Project5.png";
 import ssproject1 from "../assets/Ss1-p-5.png";
 import ssproject2 from "../assets/Ss2-p-5.png";
 import { useNavigate } from "react-router-dom";
