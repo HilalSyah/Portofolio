@@ -3,7 +3,7 @@ import Nav from "../Components/Nav";
 import { Typewriter } from "react-simple-typewriter";
 import { FaArrowRight } from "react-icons/fa";
 import { motion } from "framer-motion";
-import profileImg from "../assets/foto.jpg";
+import profileImg from "../assets/foto.JPG";
 import { useNavigate } from "react-router-dom";
 import SkillsPage from "./Skills";
 import {
