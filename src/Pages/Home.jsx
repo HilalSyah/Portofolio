@@ -3,7 +3,7 @@ import Nav from "../Components/Nav";
 import { Typewriter } from "react-simple-typewriter";
 import { FaArrowRight } from "react-icons/fa";
 import { motion } from "framer-motion";
-import profileImg from "../assets/Hilal.jpg";
+import profileImg from "../assets/foto.jpg";
 import { useNavigate } from "react-router-dom";
 import SkillsPage from "./Skills";
 import {
@@ -266,11 +266,13 @@ const Home = () => {
             custom={4}
             className="relative px-8 py-3 bg-black text-white font-semibold rounded-lg border-2 border-[#00F5D4] hover:border-[#00F5D4] transition-all duration-300 hover:shadow-[0_0_20px_10px_rgba(0,245,212,0.6)] active:scale-95 active:shadow-[0_0_10px_5px_rgba(0,245,212,0.4)] group"
           >
-            <span className="flex items-center space-x-2">
-              <span>Donwload CV</span>
-              <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-300" />
-            </span>
-            <span className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-r from-[#00F5D4]/20 to-[#00F5D4]/20"></span>
+            <a href="https://drive.google.com/file/d/1DbnyEbptSojNtvMrPQ7ydG7YlKBqfvD0/view?usp=sharing">
+              <span className="flex items-center space-x-2">
+                <span>Donwload CV</span>
+                <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-300" />
+              </span>
+              <span className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-r from-[#00F5D4]/20 to-[#00F5D4]/20"></span>
+            </a>
           </motion.button>
         </div>
       </section>
@@ -388,7 +390,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      
+
       <section id="contact" className="min-h-screen bg-[#0d0c1d] text-white px-6 py-20 flex items-center justify-center font-grotesk">
         <motion.div className="max-w-5xl w-full grid md:grid-cols-2 gap-12" variants={containerVariants3} initial="hidden" animate="visible">
           {/* Info Kontak */}
